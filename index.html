@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
     <script defer src="script.js"></script>
-    <title>Homepage</title>
+    <title>Home</title>
   </head>
   <body>
     <header
       class="flex flex-col gap-32"
       style="background-image: url(images/header-bg.jpg)"
     >
-      <div class="flex relative py-8 2xl:px-48 px-6 gap-8 items-center">
-        <div class="flex justify-between flex-grow items-center text-white">
+      <div class="flex relative py-8 sm:px-48 px-6 gap-8 items-center">
+        <div class="flex justify-between flex-grow text-white">
           <div>
             <img
               src="https://www.fundamental.bg/logo-white.svg"
@@ -24,9 +24,11 @@
           </div>
           <nav
             id="nav"
-            class="hidden xl:block absolute xl:static left-5 right-5 rounded-lg top-full xl:bg-transparent bg-white"
+            class="hidden sm:block absolute sm:static left-5 right-5 rounded-lg top-full sm:bg-transparent bg-white"
           >
-            <div class="close my-8 ml-auto mr-6 w-7 flex flex-col gap-4">
+            <div
+              class="close sm:hidden my-8 ml-auto mr-6 w-7 flex flex-col gap-4"
+            >
               <div
                 class="w-full h-0.5 bg-black origin-top-left rotate-45"
               ></div>
@@ -35,7 +37,7 @@
               ></div>
             </div>
             <ul
-              class="flex xl:flex-row pb-12 text-2xl xl:text-base font-bold flex-col text-black gap-4 xl:gap-8 pl-12 xl:items-center"
+              class="flex sm:flex-row pb-12 text-2xl sm:text-base font-bold sm:font-normal flex-col text-black sm:text-white gap-4 sm:gap-8 pl-12 sm:items-center"
             >
               <li><a href="">Portfolio</a></li>
               <li><a href="">About us</a></li>
@@ -45,12 +47,12 @@
               <li>
                 <a
                   href="/"
-                  class="xl:bg-green-500 xl:py-2 xl:px-4 xl:text-white rounded-lg cursor-pointer transition hover:bg-green-400"
+                  class="sm:bg-green-500 sm:py-2 sm:px-4 sm:text-white rounded-lg cursor-pointer transition hover:bg-green-400"
                   >Start a project</a
                 >
               </li>
             </ul>
-            <div class="pl-12 pb-8">
+            <div class="pl-12 pb-8 sm:hidden">
               <p class="text-black mb-2">hello@fundamental.bg</p>
               <div class="flex gap-4">
                 <img src="images/instagram.png" alt="" class="cursor-pointer" />
@@ -61,46 +63,47 @@
           </nav>
         </div>
 
-        <div class="open w-8 flex flex-col gap-1.5 xl:hidden">
+        <div class="open w-8 flex flex-col gap-1.5 sm:hidden">
           <div class="w-full h-1 bg-white"></div>
           <div class="w-full h-1 bg-white"></div>
           <div class="w-full h-1 bg-white"></div>
         </div>
       </div>
-      <div class="xl:text-center text-white mx-8 xl:mx-20 pb-24 xl:pb-0">
-        <h1 class="font-bold leading-none text-6xl xl:text-8xl">
+      <div class="sm:text-center text-white mx-8 sm:mx-20 pb-24 sm:pb-0">
+        <h1 class="font-bold leading-none text-6xl sm:text-8xl">
           Blurring the line between art and technology.
         </h1>
-        <p class="mt-8 text-xl xl:text-base">
+        <p class="mt-8 text-xl sm:text-base">
           Fundamental Studio is a modern digital company, offering different
           kind of services at your disposal. We are your trustworthy partner.
         </p>
       </div>
       <div
-        class="hidden xl:block border-4 border-white p-4 mb-12 w-8 mx-auto rounded-full h-14 relative after:absolute after:bg-white after:w-2 after:h-3 after:-translate-x-2/4 after:translate-y-1/2 after:rounded-full after:inset-1/2"
+        class="hidden sm:block border-4 border-white p-4 mb-12 w-8 mx-auto rounded-full h-14 relative after:absolute after:bg-white after:w-2 after:h-3 after:-translate-x-2/4 after:translate-y-1/2 after:rounded-full after:inset-1/2"
       ></div>
     </header>
-    <main class="px-8 xl:px-48 py-8 mt-16">
+    <main class="px-8 sm:px-48 py-8 mt-16">
       <section class="projects">
         <div class="flex items-center gap-12">
           <h2 class="font-bold text-5xl" style="color: #382831">
             Projects we are proud of
           </h2>
-          <div class="flex-grow h-px bg-black hidden xl:block"></div>
-          <button
-            class="hidden bg-green-500 font-bold text-white xl:flex items-center gap-8 py-3 px-4 rounded-lg transition hover:bg-green-400"
+          <div class="flex-grow h-px bg-black hidden sm:block"></div>
+          <a
+            href=""
+            class="hidden bg-green-500 font-bold text-white sm:flex items-center gap-8 py-3 px-4 rounded-lg transition hover:bg-green-400"
           >
             See all <img src="images/arrow-up-right.png" alt="" class="w-4" />
-          </button>
+          </a>
         </div>
-        <div class="grid grid-cols-1 xl:grid-cols-3 mt-12 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-3 mt-12 gap-4">
           <div
-            class="xl:col-span-3 relative rounded-3xl overflow-hidden after:absolute after:bg-black after:inset-0 after:opacity-30"
+            class="sm:col-span-3 relative rounded-3xl overflow-hidden after:absolute after:bg-black after:inset-0 after:opacity-30"
             style="min-height: 75vh"
           >
             <img src="images/laptop-and-phone.png" alt="" class="block" />
             <div
-              class="absolute bottom-10 left-10 xl:left-auto right-10 xl:w-1/3 rounded-3xl bg-white z-10 px-10 py-6"
+              class="absolute bottom-10 left-10 sm:left-auto right-10 sm:w-1/3 rounded-3xl bg-white z-10 px-10 py-6"
             >
               <div class="flex gap-4">
                 <span class="bg-green-600 text-white rounded-lg py-0.5 px-2"
@@ -109,41 +112,43 @@
                 <span class="bg-fuchsia-900 text-white rounded-lg py-0.5 px-2"
                   >Development</span
                 >
-                <span class="flex-grow text-right hidden xl:inline">2022</span>
+                <span class="flex-grow text-right hidden sm:inline">2022</span>
               </div>
               <h2
-                class="xl:text-3xl text-base font-bold mt-10"
+                class="sm:text-3xl text-base font-bold mt-10"
                 style="color: #382831"
               >
                 A company designed to translate and legalize important
                 documents.
               </h2>
-              <button
-                class="bg-green-500 text-white flex py-3 px-4 items-center gap-4 rounded-lg mt-6 transition hover:bg-green-400"
+              <a
+                href="prevodite.html"
+                class="bg-green-500 w-3/4 sm:w-1/2 text-white flex py-3 px-4 items-center gap-4 rounded-lg mt-6 transition hover:bg-green-400"
               >
                 See project
                 <img src="images/arrow-up-right.png" alt="" class="w-4" />
-              </button>
+              </a>
             </div>
           </div>
           <div
-            class="xl:col-span-2 relative rounded-3xl overflow-hidden after:absolute after:bg-black after:inset-0 after:opacity-30"
+            class="sm:col-span-2 relative rounded-3xl overflow-hidden after:absolute after:bg-black after:inset-0 after:opacity-30"
             style="min-height: 75vh"
           >
             <img src="images/word-laptop.png" alt="" />
             <div
-              class="absolute bottom-10 left-10 right-10 xl:right-auto xl:w-2/3 bg-white z-10 rounded-3xl px-10 py-6 flex flex-col items-start"
+              class="absolute bottom-10 left-10 right-10 sm:right-auto sm:w-2/3 bg-white z-10 rounded-3xl px-10 py-6 flex flex-col items-start"
             >
-              <span class="self-end hidden xl:inline">2022</span>
-              <h2 class="xl:text-3xl font-bold xl:mt-10" style="color: #382831">
+              <span class="self-end hidden sm:inline">2022</span>
+              <h2 class="sm:text-3xl font-bold sm:mt-10" style="color: #382831">
                 A platform for learning languages online
               </h2>
-              <button
+              <a
+                href=""
                 class="bg-green-500 text-white flex py-3 px-4 items-center gap-4 rounded-lg mt-6 transition hover:bg-green-400"
               >
                 See project
                 <img src="images/arrow-up-right.png" class="w-4" alt="" />
-              </button>
+              </a>
             </div>
           </div>
           <div
@@ -157,23 +162,24 @@
             </h2>
           </div>
           <div
-            class="xl:col-span-3 relative rounded-3xl overflow-hidden after:absolute after:bg-black after:inset-0 after:opacity-30"
+            class="sm:col-span-3 relative rounded-3xl overflow-hidden after:absolute after:bg-black after:inset-0 after:opacity-30"
             style="min-height: 75vh"
           >
             <img src="images/card-mockup.png" alt="" />
             <div
-              class="absolute bottom-14 left-10 xl:left-auto xl:w-2/6 right-10 bg-white z-10 rounded-3xl px-10 py-6 flex flex-col items-start"
+              class="absolute bottom-14 left-10 sm:left-auto sm:w-2/6 right-10 bg-white z-10 rounded-3xl px-10 py-6 flex flex-col items-start"
             >
-              <span class="self-end xl:inline hidden">2022</span>
-              <h2 class="xl:text-3xl font-bold xl:mt-10" style="color: #382831">
+              <span class="self-end sm:inline hidden">2022</span>
+              <h2 class="sm:text-3xl font-bold sm:mt-10" style="color: #382831">
                 Animations for Intellect App made for more engagement
               </h2>
-              <button
+              <a
+                href=""
                 class="bg-green-500 text-white flex py-3 px-4 items-center gap-4 rounded-lg mt-6 transition hover:bg-green-400"
               >
                 See project
                 <img src="images/arrow-up-right.png" class="w-4" alt="" />
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -181,11 +187,11 @@
       <section class="services">
         <div class="flex items-center gap-8 mt-20">
           <h2 class="text-5xl font-bold">SERVICEs</h2>
-          <div class="hidden xl:block flex-grow bg-slate-600 h-px"></div>
+          <div class="hidden sm:block flex-grow bg-slate-600 h-px"></div>
         </div>
         <div>
           <div
-            class="grid grid-cols-[75px_auto] xl:flex gap-8 items-center border-b border-gray-300 py-8"
+            class="grid grid-cols-[75px_auto] sm:flex gap-8 items-center border-b border-gray-300 py-8"
           >
             <span
               class="text-9xl text-transparent font-bold"
@@ -193,10 +199,10 @@
               >1</span
             >
             <span
-              class="text-green-500 flex-grow text-3xl xl:text-2xl font-semibold"
+              class="text-green-500 flex-grow text-3xl sm:text-2xl font-semibold"
               >Website design</span
             >
-            <p class="xl:w-1/2 col-span-2 text-lg xl:text-base text-gray-500">
+            <p class="sm:w-1/2 col-span-2 text-lg sm:text-base text-gray-500">
               Lorem ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -204,7 +210,7 @@
             </p>
           </div>
           <div
-            class="grid grid-cols-[75px_auto] xl:flex gap-8 items-center border-b border-gray-300 py-8"
+            class="grid grid-cols-[75px_auto] sm:flex gap-8 items-center border-b border-gray-300 py-8"
           >
             <span
               class="text-9xl text-transparent font-bold"
@@ -212,10 +218,10 @@
               >2</span
             >
             <span
-              class="text-green-500 flex-grow text-3xl xl:text-2xl font-semibold"
+              class="text-green-500 flex-grow text-3xl sm:text-2xl font-semibold"
               >Development</span
             >
-            <p class="xl:w-1/2 col-span-2 text-lg xl:text-base text-gray-500">
+            <p class="sm:w-1/2 col-span-2 text-lg sm:text-base text-gray-500">
               Lorem ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -223,7 +229,7 @@
             </p>
           </div>
           <div
-            class="grid grid-cols-[75px_auto] xl:flex gap-8 items-center border-b border-gray-300 py-8"
+            class="grid grid-cols-[75px_auto] sm:flex gap-8 items-center border-b border-gray-300 py-8"
           >
             <span
               class="text-9xl text-transparent font-bold"
@@ -231,10 +237,10 @@
               >3</span
             >
             <span
-              class="text-green-500 flex-grow text-3xl xl:text-2xl font-semibold"
+              class="text-green-500 flex-grow text-3xl sm:text-2xl font-semibold"
               >Brand Identity</span
             >
-            <p class="xl:w-1/2 col-span-2 text-lg xl:text-base text-gray-500">
+            <p class="sm:w-1/2 col-span-2 text-lg sm:text-base text-gray-500">
               Lorem ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -242,7 +248,7 @@
             </p>
           </div>
           <div
-            class="grid grid-cols-[75px_auto] xl:flex gap-8 items-center border-b border-gray-300 py-8"
+            class="grid grid-cols-[75px_auto] sm:flex gap-8 items-center border-b border-gray-300 py-8"
           >
             <span
               class="text-9xl text-transparent font-bold"
@@ -250,10 +256,10 @@
               >4</span
             >
             <span
-              class="text-green-500 flex-grow text-3xl xl:text-2xl font-semibold"
+              class="text-green-500 flex-grow text-3xl sm:text-2xl font-semibold"
               >CMS Development</span
             >
-            <p class="xl:w-1/2 col-span-2 text-lg xl:text-base text-gray-500">
+            <p class="sm:w-1/2 col-span-2 text-lg sm:text-base text-gray-500">
               Lorem ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -261,7 +267,7 @@
             </p>
           </div>
           <div
-            class="grid grid-cols-[75px_auto] xl:flex gap-8 items-center border-b border-gray-300 py-8"
+            class="grid grid-cols-[75px_auto] sm:flex gap-8 items-center border-b border-gray-300 py-8"
           >
             <span
               class="text-9xl text-transparent font-bold"
@@ -269,10 +275,10 @@
               >5</span
             >
             <span
-              class="text-green-500 flex-grow text-3xl xl:text-2xl font-semibold"
+              class="text-green-500 flex-grow text-3xl sm:text-2xl font-semibold"
               >Software Development</span
             >
-            <p class="xl:w-1/2 col-span-2 text-lg xl:text-base text-gray-500">
+            <p class="sm:w-1/2 col-span-2 text-lg sm:text-base text-gray-500">
               Lorem ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -280,7 +286,7 @@
             </p>
           </div>
           <div
-            class="grid grid-cols-[75px_auto] xl:flex gap-8 items-center py-8"
+            class="grid grid-cols-[75px_auto] sm:flex gap-8 items-center py-8"
           >
             <span
               class="text-9xl text-transparent font-bold"
@@ -288,10 +294,10 @@
               >6</span
             >
             <span
-              class="text-green-500 flex-grow text-3xl xl:text-2xl font-semibold"
+              class="text-green-500 flex-grow text-3xl sm:text-2xl font-semibold"
               >Animation</span
             >
-            <p class="xl:w-1/2 col-span-2 text-lg xl:text-base text-gray-500">
+            <p class="sm:w-1/2 col-span-2 text-lg sm:text-base text-gray-500">
               Lorem ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -301,34 +307,34 @@
         </div>
       </section>
       <section
-        class="about-us flex flex-col xl:flex-row items-center gap-8 xl:gap-32 mt-20 pb-20"
+        class="about-us flex flex-col sm:flex-row items-center gap-8 sm:gap-32 mt-20 pb-20"
         style="
           background: url(images/about-us-bg.png) no-repeat bottom;
           background-size: contain;
         "
       >
-        <div class="xl:w-1/2 flex flex-col gap-4 items-start">
+        <div class="sm:w-1/2 flex flex-col gap-4 items-start">
           <button
             class="text-green-500 border-green-500 border p-2 rounded-lg cursor-default"
           >
             Fundamentals of Creativity
           </button>
-          <h2 class="text-5xl xl:text-4xl font-bold" style="color: #382831">
+          <h2 class="text-5xl sm:text-4xl font-bold" style="color: #382831">
             Get to know us
           </h2>
-          <p class="xl:text-base text-lg text-gray-500">
+          <p class="sm:text-base text-lg text-gray-500">
             Lorem ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book.
           </p>
           <button
-            class="bg-green-500 text-white w-full xl:w-1/3 justify-center mt-4 flex items-center gap-4 py-2 px-4 rounded-lg transition hover:bg-green-400"
+            class="bg-green-500 text-white w-full sm:w-1/3 justify-center mt-4 flex items-center gap-4 py-2 px-4 rounded-lg transition hover:bg-green-400"
           >
             About us <img src="images/arrow-up-right.png" alt="" class="w-4" />
           </button>
         </div>
-        <div class="xl:w-1/2">
+        <div class="sm:w-1/2">
           <img src="images/Avatar.png" alt="" class="w-full block" />
         </div>
       </section>
@@ -339,9 +345,9 @@
           </h2>
           <div class="h-px bg-gray-500 flex-grow"></div>
         </div>
-        <div class="flex xl:flex-row flex-col gap-4 my-12">
+        <div class="flex sm:flex-row flex-col gap-4 my-12">
           <div
-            class="bg-gray-100 rounded-2xl py-32 xl:py-8 px-8 xl:w-1/3 flex flex-col items-center justify-center"
+            class="bg-gray-100 rounded-2xl py-32 sm:py-8 px-8 sm:w-1/3 flex flex-col items-center justify-center"
             style="
               background: url(images/header-bg.jpg) no-repeat center;
               background-size: cover;
@@ -359,7 +365,7 @@
             >
           </div>
           <div
-            class="bg-gray-100 rounded-2xl xl:w-1/3 p-8 flex flex-col items-start gap-16"
+            class="bg-gray-100 rounded-2xl sm:w-1/3 p-8 flex flex-col items-start gap-16"
           >
             <img src="images/stars.png" alt="" />
             <p>
@@ -374,7 +380,7 @@
             </div>
           </div>
           <div
-            class="bg-gray-100 rounded-2xl xl:w-1/3 p-8 flex flex-col items-start gap-16"
+            class="bg-gray-100 rounded-2xl sm:w-1/3 p-8 flex flex-col items-start gap-16"
           >
             <img src="images/stars.png" alt="" />
             <p>
@@ -407,22 +413,22 @@
         />
       </section>
       <section
-        class="relative -mx-8 xl:-mx-48 mt-32 py-40 text-white"
+        class="relative -mx-8 sm:-mx-48 mt-32 py-40 text-white"
         style="
           background: url(images/header-bg.jpg) no-repeat center;
           background-size: cover;
         "
       >
-        <div class="relative p-8 xl:p-0 z-10 flex flex-col gap-12 items-center">
-          <h2 class="xl:text-7xl text-4xl text-center xl:text-left font-bold">
+        <div class="relative p-8 sm:p-0 z-10 flex flex-col gap-12 items-center">
+          <h2 class="sm:text-7xl text-4xl text-center sm:text-left font-bold">
             We would love to work with you
           </h2>
-          <p class="xl:text-sm text-lg text-center xl:text-left">
+          <p class="sm:text-sm text-lg text-center sm:text-left">
             Fundamentail Studio is a modern digital company, offering different
             kind of services at your disposal. We are your trustworthy partner.
           </p>
           <button
-            class="flex gap-4 self-stretch xl:self-center justify-center items-center bg-green-500 rounded-md transition hover:bg-green-400 py-4 px-8 font-bold text-xl"
+            class="flex gap-4 self-stretch sm:self-center justify-center items-center bg-green-500 rounded-md transition hover:bg-green-400 py-4 px-8 font-bold text-xl"
           >
             Start a project <img src="images/arrow-up-right.png" alt="" />
           </button>
@@ -430,25 +436,25 @@
         <div class="absolute inset-0 bg-black opacity-30 z-0"></div>
       </section>
     </main>
-    <footer class="xl:px-48 px-8 pt-12 pb-8">
+    <footer class="sm:px-48 px-8 pt-12 pb-8">
       <div
-        class="xl:flex grid grid-cols-[40%,60%] gap-8 xl:gap-20 justify-between border-b pb-8"
+        class="sm:flex grid grid-cols-[40%,60%] gap-8 sm:gap-20 justify-between border-b pb-8"
       >
-        <div class="xl:w-2/5 col-span-2">
+        <div class="sm:w-2/5 col-span-2">
           <img
             src="https://www.fundamental.bg/logo.svg"
             alt=""
-            class="xl:w-3/5 w-4/5"
+            class="sm:w-3/5 w-4/5"
           />
-          <h2 class="xl:text-2xl text-3xl font-bold w-2/3">
+          <h2 class="sm:text-2xl text-3xl font-bold w-2/3">
             We would love to hear from you
           </h2>
-          <p class="mt-2 mr-6 text-lg xl:text-base">
+          <p class="mt-2 mr-6 text-lg sm:text-base">
             Feel free to reach out if you want to collaborate with us, or simply
             have a chat.
           </p>
         </div>
-        <div class="xl:w-1/5">
+        <div class="sm:w-1/5">
           <p class="mb-2">Pages</p>
           <ul class="flex flex-col gap-4">
             <li><a href="" class="text-gray-500">About us</a></li>
@@ -457,13 +463,13 @@
             <li><a href="" class="text-gray-500">Contact us</a></li>
           </ul>
         </div>
-        <div class="xl:w-1/5">
+        <div class="sm:w-1/5">
           <p class="mb-2">Location</p>
           <p class="text-gray-500">Fundamental Studio Ltd.</p>
           <p class="text-gray-500">70-72 Cherni vrah blvd.</p>
           <p class="text-gray-500">Sofia, Bulgaria 1407</p>
         </div>
-        <div class="xl:w-1/5 col-span-2">
+        <div class="sm:w-1/5 col-span-2">
           <p class="mb-2">Say Hi :)</p>
           <p class="text-gray-500">hello@fundamental.bg</p>
           <p class="text-gray-500">+359 895 697 410</p>
@@ -474,17 +480,17 @@
           </div>
         </div>
       </div>
-      <div class="xl:flex grid grid-cols-2 gap-y-4 xl:gap-20 pt-4">
-        <p class="text-gray-500 text-sm xl:text-base hover:text-black">
+      <div class="sm:flex grid grid-cols-2 gap-y-4 sm:gap-20 pt-4">
+        <p class="text-gray-500 text-sm sm:text-base hover:text-black">
           <a href="/">Cookie Policy</a>
         </p>
         <p
-          class="flex-grow text-gray-500 text-sm xl:text-base hover:text-black"
+          class="flex-grow text-gray-500 text-sm sm:text-base hover:text-black"
         >
           <a href="/">Terms of use & Privacy policy</a>
         </p>
         <p
-          class="text-gray-500 col-span-2 text-sm xl:text-base text-center xl:text-left"
+          class="text-gray-500 col-span-2 text-sm sm:text-base text-center sm:text-left"
         >
           &copy; 2016-2021 Fundamental Studio Ltd. All rights Reserved.
         </p>
